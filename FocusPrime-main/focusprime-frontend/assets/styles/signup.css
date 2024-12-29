@@ -1,0 +1,157 @@
+body {
+  font-family: 'Times New Roman', Times, serif; /* Setting font to Times New Roman */
+  background: linear-gradient(to right, #e0eafc, #cfdef3); /* Light gradient background */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Text color for contrast */
+  line-height: 1.6;
+}
+
+  /* Login Container Styles */
+.login-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: radial-gradient(circle, #ed9090, #f8b5b5); /* Circular gradient background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.5s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect to slightly enlarge and change the background */
+.login-container:hover {
+  transform: scale(1.05); /* Slightly increase size */
+  background: radial-gradient(circle, #f8b5b5, #ed9090); /* Reversed gradient on hover */
+}
+  
+  .login-container {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #0e0c0c;
+  }
+  /* Container styles */
+  .signup-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: radial-gradient(circle, #ed9090, #f8b5b5); /* Circular gradient background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s ease, transform 0.3s ease; /* Smooth transitions */
+  }
+  
+  /* Hover effect to slightly enlarge and change the background */
+  .signup-container:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    background: radial-gradient(circle, #f8b5b5, #ed9090); /* Reversed gradient on hover */
+  }
+  
+  .signup-container {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #0a0808;
+  }
+  
+  /* Input group styles */
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: inline;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .input-group input:focus {
+    border-color: #418c8f;
+    outline: none;
+    box-shadow: 0 0 3px rgba(108, 99, 255, 0.4);
+  }
+  
+  /* Button styles */
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #96e4fb;
+    color: #1c1818;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #7e7bd6;
+  }
+  
+  /* Link styles */
+  p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #0a0808;
+  }
+  
+  p a {
+    color: #6c63ff;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .form-container, .login-container {
+        width: 90%;
+    }
+}
+h1, h2 {
+  font-family: 'Dancing Script', cursive; /* Use a cursive font */
+  text-align: center;
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+h1 {
+  font-size: 2.5em; /* Adjust size for h1 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow effect */
+}
+
+h2 {
+  font-size: 2em; /* Adjust size for h2 */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Text shadow effect */
+}
+
+/* Hover effects */
+h1:hover, h2:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Stronger text shadow on hover */
+}

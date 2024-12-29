@@ -1,0 +1,65 @@
+body {
+  font-family: 'Times New Roman', Times, serif; /* Setting font to Times New Roman */
+  background: linear-gradient(to right, #e0eafc, #cfdef3); /* Light gradient background */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Text color for contrast */
+  line-height: 1.6;
+}
+
+
+.profile-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: radial-gradient(circle, #ed9090, #f8b5b5); /* Circular gradient background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.5s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect to slightly enlarge and change the background */
+.profile-container:hover {
+  transform: scale(1.05); /* Slightly increase size */
+  background: radial-gradient(circle, #f8b5b5, #ed9090); /* Reversed gradient on hover */
+}
+
+
+h1, h2 {
+  font-family: 'Dancing Script', cursive; /* Use a cursive font */
+  text-align: center;
+  font-size: larger;
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+h1 {
+  font-size: 3em; /* Adjust size for h1 */
+  text-shadow: 2px 2px 4px rgba(23, 159, 197, 0.3); /* Text shadow effect */
+}
+
+h2 {
+  font-size: 2.5em; /* Adjust size for h2 */
+  text-shadow: 1px 1px 3px rgba(22, 171, 173, 0.2); /* Text shadow effect */
+}
+
+/* Hover effects */
+h1:hover, h2:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Stronger text shadow on hover */
+}
+
+#profile p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: star;
+  padding: 50px;
+}
+
+ul li {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}

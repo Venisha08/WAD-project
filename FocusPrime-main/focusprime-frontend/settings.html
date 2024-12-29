@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusPrime Settings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/logo.jpeg"> 
+    <link rel="stylesheet" href="assets/styles/settings.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="settings-container">
+        <!-- Timer Adjustment Section -->
+        <div class="timer-settings">
+            <h2>Timer Adjustment</h2>
+            <label for="task-timer">Task Timer (minutes):</label>
+            <input type="number" id="task-timer" value="25" min="5" max="60">
+
+            <label for="short-break-timer">Short Break Timer (minutes):</label>
+            <input type="number" id="short-break-timer" value="5" min="1" max="15">
+
+            <label for="long-break-timer">Long Break Timer (minutes):</label>
+            <input type="number" id="long-break-timer" value="15" min="10" max="30">
+
+            <button id="save-timer-settings">Save Timer Settings</button>
+        </div>
+        <br>
+        <br>
+
+        <!-- Notifications Section -->
+        <div class="notification-settings">
+            <h2>Notification Sounds</h2>
+            <table id="notification-table">
+                <thead>
+                    <tr>
+                        <th>Notification Name</th>
+                        <th>Points to Unlock</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Notifications will be populated here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <!-- Background Themes Section -->
+        <div class="background-settings">
+            <h2>Background Themes</h2>
+            <table id="background-table">
+                <thead>
+                    <tr>
+                        <th>Theme Name</th>
+                        <th>Points to Unlock</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic themes will be populated here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Preview Section -->
+    <div class="preview-container">
+        <h2>Preview</h2>
+        <div class="timer-preview">
+            <h3>Timer Clock</h3>
+            <div class="clock-container">
+                <span id="clock-time"></span>
+            </div>
+        </div>
+    </div>
+    <script src="js/homeTimer.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/headerLoad.js"></script>
+    <script>
+        // JavaScript for live clock in preview
+        function startClock() {
+            const clockElement = document.getElementById('clock-time');
+            setInterval(() => {
+                const now = new Date();
+                const timeString = now.toLocaleTimeString();
+                clockElement.textContent = timeString;
+            }, 1000);
+        }
+        startClock();
+    </script>
+</body>
+</html>

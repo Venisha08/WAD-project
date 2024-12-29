@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusPrime</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.jpeg"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/home.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Timer Section -->
+        <div class="timer-container">
+            <!-- Timer Buttons -->
+            <div class="timer-buttons">
+                <button class="timer-btn">Long</button> &emsp;
+                <button class="timer-btn">Short</button> &emsp;
+                <button class="timer-btn">Task</button> &emsp;
+            </div>
+
+            <!-- Timer Display and Controls -->
+            <div class="timer-box">
+                <h2 class="time">00:00</h2>
+                <div class="timer-controls">
+                    <button class="reset-btn">Reset</button> &emsp;
+                    <button class="start-btn">Start</button>
+                </div>
+            </div>           
+        </div>
+        <!-- Task Section -->
+        <div class="task-container">
+            <!-- Add Task -->
+            <div class="add-task">
+                <h3>Add a Task</h3>
+                <input type="text" id="taskInput" placeholder="Enter a new task">
+                <button onclick="addTask()">Add</button>
+            </div>
+
+            <!-- Task List -->
+            <div class="task-list" id="taskList">
+                <!-- Dynamically added tasks will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/headerLoad.js"></script>
+    <script src="js/homeTimer.js"></script>
+</body>
+</html>

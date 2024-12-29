@@ -1,0 +1,181 @@
+body {
+  font-family: 'Times New Roman', Times, serif; /* Setting font to Times New Roman */
+background: linear-gradient(to right, #e0eafc, #cfdef3); /* Light gradient background */
+margin: 0;
+padding: 0;
+color: #333; /* Text color for contrast */
+line-height: 1.6;
+}
+.settings-container {
+  font-family: 'Times New Roman', Times, serif; /* Setting font to Times New Roman */
+  background: linear-gradient(to right, #e0eafc, #cfdef3); /* Light gradient background */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Text color for contrast */
+  line-height: 1.6;
+    border-radius: 10px;
+  }
+  .timer-settings{
+    max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: radial-gradient(circle, #ed9090, #f8b5b5); /* Circular gradient background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.5s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect to slightly enlarge and change the background */
+.timer-settings:hover {
+  transform: scale(1.05); /* Slightly increase size */
+  background: radial-gradient(circle, #f8b5b5, #ed9090); /* Reversed gradient on hover */
+}
+
+.notification-settings{
+  max-width: 600px;
+margin: 50px auto;
+padding: 20px;
+background: radial-gradient(circle, #ed9090, #f8b5b5); /* Circular gradient background */
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: background 0.5s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect to slightly enlarge and change the background */
+.notification-settings:hover {
+transform: scale(1.05); /* Slightly increase size */
+background: radial-gradient(circle, #f8b5b5, #ed9090); /* Reversed gradient on hover */
+}
+
+.background-settings{
+  max-width: 600px;
+margin: 50px auto;
+padding: 20px;
+background: radial-gradient(circle, #ed9090, #f8b5b5); /* Circular gradient background */
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: background 0.5s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect to slightly enlarge and change the background */
+.background-settings:hover {
+transform: scale(1.05); /* Slightly increase size */
+background: radial-gradient(circle, #f8b5b5, #ed9090); /* Reversed gradient on hover */
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive; /* Use a cursive font */
+  text-align: center;
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+h2 {
+  font-size: 2em; /* Adjust size for h2 */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Text shadow effect */
+}
+
+/* Hover effects */
+ h2:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Stronger text shadow on hover */
+}
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  #save-timer-settings {
+    background-color: #cfdef3;
+    color: #1c1818;
+  }
+  
+  #save-timer-settings:hover {
+    background-color: #ed9090;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    border-color: black;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .locked {
+    color: #999;
+  }
+  
+  .locked td {
+    background-color: #f9f9f9;
+  }
+  
+  .play-btn, .save-btn, .view-btn {
+    background-color: #cfdef3;
+    color: #1c1818;
+    margin: 0 5px;
+  }
+  
+  .play-btn:hover, .save-btn:hover, .view-btn:hover {
+    background-color: #ed9090;
+  }
+  
+  .play-btn:disabled, .save-btn:disabled, .view-btn:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+/* preview */
+  .preview-container {
+    margin:5%;
+    margin-left: 30%;
+    padding: 15px;
+    width: 40%;
+    border: #000000 solid 3px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timer-preview {
+    text-align: center;
+}
+
+.clock-container {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    background-color: antiquewhite ;
+    padding: 10%;
+    border: #000000 solid 3px;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
